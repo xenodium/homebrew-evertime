@@ -11,6 +11,16 @@ class Evertime < Formula
     prefix.install "build/Release/EverTime.app"
   end
 
+  def caveats
+    <<~EOS
+      EverTime.app was installed to:
+        #{opt_prefix}/EverTime.app
+
+      To launch from Terminal:
+        open "#{opt_prefix}/EverTime.app"
+    EOS
+  end
+
   test do
     assert_predicate prefix/"EverTime.app", :exist?
   end
