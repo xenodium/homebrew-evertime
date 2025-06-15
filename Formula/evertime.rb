@@ -7,7 +7,7 @@ class Evertime < Formula
   depends_on xcode: :build
 
   def install
-    system "xcodebuild", "-scheme", "EverTime", "-configuration", "Release", "SYMROOT=build"
+    system "xcodebuild", "-scheme", "EverTime", "-configuration", "Release", "CODE_SIGN_IDENTITY=", "CODE_SIGNING_REQUIRED=NO", "CODE_SIGNING_ALLOWED=NO", "SYMROOT=build"
     prefix.install "build/Release/EverTime.app"
   end
 
