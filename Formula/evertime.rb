@@ -1,4 +1,4 @@
-class EverTime < Formula
+class Evertime < Formula
   desc "An ever present clock for macOS"
   homepage "https://github.com/xenodium/EverTime"
   head "https://github.com/xenodium/EverTime.git", branch: "main"
